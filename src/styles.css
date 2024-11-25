@@ -1,0 +1,75 @@
+body {
+  background-image: url('https://img.goodfon.com/original/1920x1080/8/39/karamimame-pokemon-pokemony-pokemon-les.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-container,
+  .search-container,
+  .details-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    align-content: center;
+    margin: 20% 5%;
+    padding: 2%;
+    box-shadow: 0px -1px 107px -8px rgba(40, 54, 64, 0.945);
+    -webkit-box-shadow: 0px -1px 107px -8px rgba(40, 54, 64, 0.945);
+    -moz-box-shadow: 0px -1px 107px -8px rgba(40, 54, 64, 0.945);
+  }
+  .details-container img {
+    width: 18%;
+  }
+  .search-container input{
+    margin: 1%;
+    padding: 1% 1%;
+    text-align: center;
+    width: 40% ;
+  }
+  
+  button {
+    background-color: rgba(42, 51, 59, 0.83);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    
+  }
+  button:hover{
+    background-color: rgba(40, 97, 147, 0.83);
+  }
+  .pokemon-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    background-color: aliceblue;
+    box-shadow: 0px -1px 107px -8px rgba(98, 116, 129, 0.801);
+    -webkit-box-shadow: 0px -1px 107px -8px rgba(98, 116, 129, 0.801);
+    -moz-box-shadow: 0px -1px 107px -8px rgba(98, 116, 129, 0.801); 
+  }
+  .poke-li{
+    padding: 25%, 25%;
+    margin: 5% 38%;
+    height: 15%;
+    width: 25%;
+    display: grid;
+    background-color: aliceblue;
+    border: 1px solid #ddd;
+    box-shadow: 0px -1px 107px -8px rgba(98, 116, 129, 0.801);
+    -webkit-box-shadow: 0px -1px 107px -8px rgba(98, 116, 129, 0.801);
+    -moz-box-shadow: 0px -1px 107px -8px rgba(98, 116, 129, 0.801);
+  }
+  .poke-img{
+    padding: 9%;
+    width: 80%;
+    height: 80%;
+    margin: 1% 1%;
+  }
+  

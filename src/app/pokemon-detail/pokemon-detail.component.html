@@ -1,0 +1,9 @@
+<div *ngIf="pokemon" class="details-container">
+    <img [src]="pokemon?.['sprites']?.['other']?.['showdown']?.['front_default']" alt="{{ pokemon.name }}" />
+    <h2>{{ pokemon.name }}</h2>
+    <p>ID: {{ pokemon.id }}</p>
+    <p>Tipo: {{ pokemon.types[0].type.name }}</p>
+    <button [cdkCopyToClipboard]="pokemonDetailsToCopy" (click)="share()">Copy to clipBoard</button>
+    <button (click)="returnToSearch()">Back to Search</button>
+  </div>
+  

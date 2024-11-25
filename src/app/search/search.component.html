@@ -1,0 +1,28 @@
+<div class="search-container">
+    <h1>Search Pokemon</h1>
+    <input [(ngModel)]="searchByIdTerm" placeholder="Search by Pokemon ID/name"/>
+    OR
+    <input [(ngModel)]="searchByTypeTerm" placeholder="Search by Pokemon Type"/>
+    <button (click)="search()">Search</button>
+    <button (click)="returnToHome()">Back to Home</button>
+
+    <div class="results">
+      <div *ngIf="isSingleResult && results.length" class="pokemon-card">
+        <img [src]="results[0].sprites?.other?.dream_world?.front_default" alt="{{ results[0].name }}" />
+        <h3>{{ results[0].name }}</h3>
+        <p>ID: {{ results[0].id }}</p>
+        <button (click)="viewDetails(results[0])">See Details</button>
+      </div>
+  
+      <div *ngIf="!isSingleResult  && results.length" class="pokemon-list">
+        <div *ngFor="let poke of results" class="poke-li">
+          <img [src]="poke.sprites?.other?.dream_world?.front_default" alt="{{ poke.name }}" class="poke-img" />
+          <h2>{{ poke.name }}</h2>
+          <h2>{{ poke.types[0].type.name }}</h2>
+          <h3>ID: {{ poke.id }}</h3>
+          <button (click)="viewDetails(poke)">See Details</button>
+          </div>
+      </div>
+    </div>
+</div>
+  
